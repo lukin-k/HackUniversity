@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Maksim Makarov, SPbPU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  D:\kel\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+D:\kel\project\tree\MDK-ARM\tree.uvprojx
+Project File Date:  04/15/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\kel\ARM\ARMCC\Bin'
+Build target 'tree'
+compiling stm32l4xx_it.c...
+compiling system_stm32l4xx.c...
+compiling stm32l4xx_hal_msp.c...
+compiling arm_cmplx_mag_squared_q15.c...
+../Drivers/CMSIS/Include/core_cm4.h(1630): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1641): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1654): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1665): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1676): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1689): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1702): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+../Drivers/CMSIS/Include/core_cm4.h(1706): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+      SCB->SHP[(((uint32_t)(int32_t)IRQn) & 0xFUL)-4UL] = (uint8_t)((priority << (8U - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL);
+../Drivers/CMSIS/Include/core_cm4.h(1710): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+      NVIC->IP[((uint32_t)(int32_t)IRQn)]               = (uint8_t)((priority << (8U - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL);
+../Drivers/CMSIS/Include/core_cm4.h(1724): error:  #20: identifier "IRQn_Type" is undefined
+  __STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+../Drivers/CMSIS/Include/core_cm4.h(1729): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+      return(((uint32_t)SCB->SHP[(((uint32_t)(int32_t)IRQn) & 0xFUL)-4UL] >> (8U - __NVIC_PRIO_BITS)));
+../Drivers/CMSIS/Include/core_cm4.h(1733): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+      return(((uint32_t)NVIC->IP[((uint32_t)(int32_t)IRQn)]               >> (8U - __NVIC_PRIO_BITS)));
+../Drivers/CMSIS/Include/core_cm4.h(1755): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+    PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(__NVIC_PRIO_BITS)) ? (uint32_t)(__NVIC_PRIO_BITS) : (uint32_t)(7UL - PriorityGroupTmp);
+../Drivers/CMSIS/Include/core_cm4.h(1782): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+    PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(__NVIC_PRIO_BITS)) ? (uint32_t)(__NVIC_PRIO_BITS) : (uint32_t)(7UL - PriorityGroupTmp);
+../Drivers/CMSIS/Include/core_cm4.h(1842): error:  #20: identifier "SysTick_IRQn" is undefined
+    NVIC_SetPriority (SysTick_IRQn, (1UL << __NVIC_PRIO_BITS) - 1UL); /* set Priority for Systick Interrupt */
+../Drivers/CMSIS/Include/core_cm4.h(1842): error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+    NVIC_SetPriority (SysTick_IRQn, (1UL << __NVIC_PRIO_BITS) - 1UL); /* set Priority for Systick Interrupt */
+..\Src\arm_cmplx_mag_squared_q15.c: 0 warnings, 16 errors
+compiling arm_cfft_q15.c...
+compiling main.c...
+compiling stm32l4xx_hal_flash_ex.c...
+compiling stm32l4xx_hal_pwr.c...
+compiling stm32l4xx_hal_adc_ex.c...
+compiling stm32l4xx_hal_dma_ex.c...
+compiling stm32l4xx_hal_flash.c...
+compiling stm32l4xx_hal_i2c_ex.c...
+compiling stm32l4xx_hal_tim_ex.c...
+compiling stm32l4xx_hal_pwr_ex.c...
+compiling stm32l4xx_hal_rcc.c...
+compiling stm32l4xx_hal_flash_ramfunc.c...
+compiling stm32l4xx_hal_i2c.c...
+compiling stm32l4xx_hal_tim.c...
+compiling stm32l4xx_hal_gpio.c...
+compiling stm32l4xx_hal_dma.c...
+compiling stm32l4xx_hal_rcc_ex.c...
+compiling stm32l4xx_hal.c...
+compiling stm32l4xx_hal_adc.c...
+compiling stm32l4xx_hal_cortex.c...
+"tree\tree.axf" - 16 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.0.0.pack
+                Keil.STM32L4xx_DFP.2.0.0
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_tree
+  D:\kel\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  D:\kel\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Target not created.
+Build Time Elapsed:  00:02:32
+</pre>
+</body>
+</html>

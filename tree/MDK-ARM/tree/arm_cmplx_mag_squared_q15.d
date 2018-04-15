@@ -1,0 +1,13 @@
+tree\arm_cmplx_mag_squared_q15.o: ..\Src\arm_cmplx_mag_squared_q15.c
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/arm_math.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/core_cm4.h
+tree\arm_cmplx_mag_squared_q15.o: D:\kel\ARM\ARMCC\Bin\..\include\stdint.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/core_cmSimd.h
+tree\arm_cmplx_mag_squared_q15.o: D:\kel\ARM\ARMCC\Bin\..\include\string.h
+tree\arm_cmplx_mag_squared_q15.o: D:\kel\ARM\ARMCC\Bin\..\include\math.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/core_cm4.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/arm_const_structs.h
+tree\arm_cmplx_mag_squared_q15.o: ../Drivers/CMSIS/Include/arm_common_tables.h
